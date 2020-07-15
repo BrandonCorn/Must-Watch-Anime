@@ -42,3 +42,20 @@ body{
     }
   }
 
+  /* Anime Content */
+  
+  .animate-slide-in{
+    animation: slide-in 1.2s ease-out forwards; 
+  }
+
+ @keyframes slide-in {
+   0% {
+     opacity: 0; 
+     transform: translateX(-4rem) scale(.8); 
+   }
+   100% {
+     opacity: 1; 
+     transform: none; 
+   }
+ }
+

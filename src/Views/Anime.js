@@ -24,16 +24,6 @@ function Anime(){
     }
 
     return (
-        // <div className = 'flex justify-center animate-slide-in'> 
-        //     <ul> 
-        //         <li> 
-        //             Anime 1
-        //         </li> 
-        //         <li> 
-        //             Anime 2
-        //         </li> 
-        //     </ul> 
-        // </div>  
         <div> 
          { content }
         </div> 

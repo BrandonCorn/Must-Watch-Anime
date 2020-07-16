@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { useTransition, animated } from 'react-spring'
-import Anime from './Anime'
+// import { useTransition, animated } from 'react-spring'
+// import Anime from './Anime'
 
 
 function Home(){
@@ -20,7 +20,7 @@ function Home(){
             </div>
             <div className='p-5 flex justify-center animate-pop-in text-lg'>
                 <span>
-                    Your go to website for the anime your not watching and should be watching.
+                    Your go to website for the anime your not watching and should be!
                 </span>
             </div>
             <div className='flex justify-center mt-5 animate-pop-in'>

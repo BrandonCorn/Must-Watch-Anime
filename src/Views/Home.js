@@ -20,13 +20,13 @@ function Home(){
             </div>
             <div className='p-5 flex justify-center animate-pop-in text-lg'>
                 <span>
-                    Your go to website for the anime your not watching and should be!
+                    Your go to website for the anime you should be watching!
                 </span>
             </div>
             <div className='flex justify-center mt-5 animate-pop-in'>
                 <Link to = '/anime'> 
                 <div
-                className='flex-shrink border p-3 pl-10 pr-10 hover:bg-gray-700'
+                className='flex-shrink border p-3 pl-10 pr-10 mb-10 hover:bg-gray-700'
                 onClick={() => setShowMain(!showMain)}>
                     <span>
                         Enter

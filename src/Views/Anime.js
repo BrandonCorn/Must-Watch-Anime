@@ -16,9 +16,9 @@ function Anime(){
     // }
 
     if (animes.data){
-        content = animes.data.map( item => 
-            <div> 
-                <AnimeCard anime = {item} /> 
+        content = animes.data.map( anime => 
+            <div key = {anime.id}> 
+                <AnimeCard anime = {anime} /> 
             </div> 
         )
     }

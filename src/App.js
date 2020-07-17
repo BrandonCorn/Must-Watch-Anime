@@ -23,11 +23,11 @@ function App() {
               <Home /> 
             </Route> 
 
-            <Route path = '/anime'> 
+            <Route exact path = '/anime'> 
               <Anime /> 
             </Route> 
 
-            <Route path = '/anime/?id=id'> 
+            <Route path = '/anime/:id'> 
               <AnimeProfile /> 
             </Route> 
 

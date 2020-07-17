@@ -14,27 +14,20 @@ function Anime(props){
 
     if (animes.error) content = `<p> There was an error, something went wrong. </p> `
 
-    
 
     if (animes.data && showAnime){
         content = animes.data.map( anime => {
-            const profile = `/anime/?id=${anime.id}`; 
+            const profile = `/anime/:${anime.id}`; 
             return (
-            <div key = {anime.id} > 
-            <Link to = {profile} anime = {anime} onClick = {() => setShowAnime(false)}> 
-                <AnimeCard anime = {anime} /> 
+            <div key = {anime.id} onClick = {() => setShowAnime(false)}> 
+            <Link to = {{pathname: `${profile}`, state: {anime: anime}}}> 
+                <AnimeCard anime = {anime}/> 
             </Link> 
             </div> 
             )
-        }
-        )
+        })
     }
-    else{
-        content = 
-            <div> 
-                <AnimeProfile /> 
-            </div> 
-    }
+
 
     return (
         <div className = 'm-20'> 

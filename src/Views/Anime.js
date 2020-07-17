@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useAxiosGet } from '../Hooks/HttpRequest'
 import AnimeCard from '../Components/AnimeCard'
 
 function Anime(){
-
     const url = 'https://5f10a1afd40d13001631d3a1.mockapi.io/api/v1/animes'; 
     const animes = useAxiosGet(url); 
+
 
     let content = ``; 
 
@@ -17,14 +17,14 @@ function Anime(){
 
     if (animes.data){
         content = animes.data.map( anime => 
-            <div key = {anime.id}> 
+            <div key = {anime.id} > 
                 <AnimeCard anime = {anime} /> 
             </div> 
         )
     }
 
     return (
-        <div> 
+        <div className = 'm-20'> 
          { content }
         </div> 
     )

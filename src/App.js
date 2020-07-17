@@ -9,6 +9,7 @@ import Header from './Components/Header'
 import Footer from './Components/Footer'
 import Home from './Views/Home'
 import Anime from './Views/Anime'
+import AnimeProfile from './Views/AnimeProfile'
 
 function App() {
   return (
@@ -24,6 +25,10 @@ function App() {
 
             <Route path = '/anime'> 
               <Anime /> 
+            </Route> 
+
+            <Route path = '/anime/?id=id'> 
+              <AnimeProfile /> 
             </Route> 
 
           </Switch> 

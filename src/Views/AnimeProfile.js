@@ -54,7 +54,7 @@ function AnimeProfile(props){
                         <span className='text-xl'> Back </span>
                     </div>
                 </Link>
-                <img src={anime.image[1]} />
+                <img src={anime.image[1]} alt = 'anime-gif' />
                 <div className='my-10'>
                     <ul>
                         <li className='table-row'>

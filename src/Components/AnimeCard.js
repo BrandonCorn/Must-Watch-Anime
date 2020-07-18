@@ -1,13 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { useAxiosGet } from '../Hooks/HttpRequest'
-import { Link } from 'react-router-dom'
+
 
 function AnimeCard(props) {
     const [showAnimeCard, setShowAnimeCard] = useState(true); 
-    const url = `https://5f10a1afd40d13001631d3a1.mockapi.io/api/v1/animes/${props.anime.id}`; 
-    const animeDoc = useAxiosGet(url); 
     const domRef = useRef(); 
-    // const profile = `/anime/${props.anime.id}`
+    
 
      
     useEffect( () => {

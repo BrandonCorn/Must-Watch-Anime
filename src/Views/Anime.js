@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
 import { useAxiosGet } from '../Hooks/HttpRequest'
 import AnimeCard from '../Components/AnimeCard'
-import AnimeProfile from './AnimeProfile'
 import { Link } from 'react-router-dom'
-import queryString from 'query-string'
 
 function Anime(props){
     const [showAnime, setShowAnime] = useState(true); 

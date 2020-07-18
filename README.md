@@ -1,3 +1,15 @@
+This site was designed using React, Express, and deployed on heroku. Check below for the link. 
+
+This site is meant to expose new people to anime and also show others anime they may have not watched yet. By making api calls to anime data this site creates a crisp display of animes in a pleasing design. 
+
+I hope this site brings some joy and even takes some down memory lane. 
+
+https://must-watch-anime.herokuapp.com/#/
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

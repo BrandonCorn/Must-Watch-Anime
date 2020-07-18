@@ -3,7 +3,7 @@ import { useAxiosGet } from '../Hooks/HttpRequest'
 import { Link } from 'react-router-dom'
 
 function AnimeCard(props) {
-    const [showAnime, setShowAnime] = useState(true); 
+    const [showAnimeCard, setShowAnimeCard] = useState(true); 
     const url = `https://5f10a1afd40d13001631d3a1.mockapi.io/api/v1/animes/${props.anime.id}`; 
     const animeDoc = useAxiosGet(url); 
     const domRef = useRef(); 
@@ -12,7 +12,7 @@ function AnimeCard(props) {
      
     useEffect( () => {
         const observer = new IntersectionObserver(entries => {
-            entries.forEach( entry => setShowAnime(entry.isIntersecting))
+            entries.forEach( entry => setShowAnimeCard(entry.isIntersecting))
         })
         observer.observe(domRef.current); 
         return () => observer.unobserve(domRef.current)  
@@ -21,7 +21,7 @@ function AnimeCard(props) {
 
     
     return (
-        <div ref = {domRef} className = {`animate-${showAnime ? 'slide-in' : ''}`}> 
+        <div ref = {domRef} className = {`animate-${showAnimeCard ? 'slide-in' : ''}`}> 
         <div className = 'flex justify-center mb-4'>
             <div className = 'w-1/2 m-4'>
                 

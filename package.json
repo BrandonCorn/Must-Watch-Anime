@@ -22,7 +22,7 @@
   "scripts": {
     "build:css": "postcss src/index.css -o src/tailwind.css",
     "watch:css": "postcss src/index.css -o src/tailwind.css -w",
-    "start": "yarn run build && node server/server.js",
+    "start": "node server/server.js",
     "start-client": "react-scripts start && yarn start ",
     "build": "react-scripts build",
     "test": "react-scripts test",
